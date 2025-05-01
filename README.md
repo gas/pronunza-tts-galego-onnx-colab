@@ -24,8 +24,9 @@ Facilitar o uso e a experimentación con modelos TTS para galego, proporcionando
 2.  **Configurar Directorio (Opcional):** Na cela "1. Configuración...", activa `USE_GDRIVE` e axusta `GDRIVE_PROJECT_PATH` se queres usar Google Drive para gardar os modelos e os audios xerados. Se non, usará o almacenamento temporal de Colab.
 3.  **Executar Celas:** Executa as celas en orde (Menú: `Entorno de ejecución` -> `Ejecutar todas`, ou unha por unha).
 4.  **Autenticar en Hugging Face:** Introduce o teu token de acceso de Hugging Face (con permisos de lectura) cando se solicite na cela "3. Autenticación...". Asegúrate tamén de ter aceptado os termos de uso na páxina do modelo en Hugging Face.
-5.  **Sintetizar Texto:** Na cela "7. Execución...", modifica o `texto_para_sintetizar` e/ou o `nome_base_arquivo` se queres probar outras frases.
-6.  **Escoitar/Descargar Audio:** O audio xérase na carpeta `wavs` (no directorio base elixido) e móstrase un reprodutor ao final da cela 7. Podes descargar o arquivo desde o panel de arquivos de Colab.
+5.  **Sintetizar Texto:** Na cela "7. Execución...", modifica o `texto_para_sintetizar` se queres probar outras frases e/ou o `nome_base_arquivo`.
+6.  **Escoitar/Descargar Audio:** O audio (wav) xérase na carpeta `wavs` (no directorio base elixido) e móstrase un reprodutor ao final da cela
+7.  Podes descargar o arquivo desde o panel de arquivos de Colab.
 
 ## Dependencias Principais
 
@@ -37,8 +38,8 @@ Facilitar o uso e a experimentación con modelos TTS para galego, proporcionando
 
 ## Modelo Utilizado
 
-* **Modelo:** `Jarbas/proxectonos-celtia-vits-graphemes-onnx`
-* **Orixe:** Conversión ONNX realizada por JarbasAl do modelo `proxectonos/Nos_TTS-celtia-vits-graphemes` (Proxecto Nós).
+* **Modelo:** `Jarbas/proxectonos-celtia-vits-graphemes-onnx` ([Hugging Face](https://huggingface.co/Jarbas/proxectonos-celtia-vits-graphemes-onnx))
+* **Orixe:** Conversión ONNX realizada por JarbasAl do modelo `proxectonos/Nos_TTS-celtia-vits-graphemes` ([Hugging Face](https://huggingface.co/proxectonos/Nos_TTS-celtia-vits-graphemes)) do Proxecto [Nós-TTS](https://tts.nos.gal)
 * **Licenza do Modelo:** Apache 2.0 (segundo os repositorios de orixe).
 
 ## Licenza do Caderno
@@ -56,6 +57,5 @@ Este caderno distribúese baixo a **Licenza MIT**. Consulta o arquivo `LICENSE` 
 
 ## Limitacións e Traballo Futuro
 
-* Este caderno utiliza unha voz estándar (Celtia). O soporte para diferentes **variantes dialectais ('falas')** requiriría outro tipo de traballos, como o afinamento (fine-tuning) de modelos usando datasets como FalAI (GTM-UVigo) e a disposición pública de versións dixitalizadas de invaluables recursos da lingua como o volume III do Atlas Lingüístico Galego adicado a fonética ([Atlas Lingüístico Galego. Volume III: Fonética](https://ilg.usc.gal/es/publicacions/libros/atlas-linguistico-galego-volume-iii-fonetica)).
-
 * A calidade da síntese pode variar segundo a complexidade do texto de entrada.
+* Este caderno utiliza unha voz estándar (Celtia). O soporte para diferentes **variantes dialectais ('falas')** requiriría outro tipo de traballos, como o afinamento (fine-tuning) de modelos usando datasets como FalAI (GTM-UVigo) e a disposición pública de versións dixitalizadas de invaluables recursos da lingua como o volume III do Atlas Lingüístico Galego adicado a fonética ([Atlas Lingüístico Galego. Volume III: Fonética](https://ilg.usc.gal/es/publicacions/libros/atlas-linguistico-galego-volume-iii-fonetica)).
