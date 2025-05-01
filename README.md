@@ -10,6 +10,8 @@ Este caderno demostra como usar un modelo VITS pre-adestrado en formato ONNX par
 
 Unha das vantaxes de usar esta versión ONNX co código proporcionado neste caderno é que **non require a instalación nin o uso do software externo Cotovía** para o preprocesamento do texto. A normalización necesaria realízase mediante clases Python incluídas no propio caderno, simplificando a configuración.
 
+Outra característica deste modelo é que require menos recursos para se executar xa que só pesa 131MB (en comparación co modelo orixinal de case 1 GB)
+
 Podes escoitar un exemplo da voz xerada aquí:
 
 https://github.com/user-attachments/assets/b8a190c4-ac6f-4148-82b2-e43de3f6d694
